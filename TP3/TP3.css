@@ -1,0 +1,61 @@
+h2 {
+    text-align: center;
+    color: #05f;
+}
+
+form {
+    background-color: #fafafa;
+    padding: 30px;
+    width: 600px;
+    margin:center;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+input,
+textarea,
+select,
+option {
+    background-color: #fff3f3;
+}
+
+input,
+textarea,
+select {
+    padding: 3px;
+    border-width: 1px;
+    border-style: solid;
+    width: 200px;
+    border-radius: 5px;
+}
+
+input[type='submit'],
+input[type='reset']{
+    width: 100px;
+    margin-left: 5px;
+    box-shadow: 1px 1px 1px 1px #d83f3d; 
+    cursor: pointer;
+}
+
+input:required{
+    border-color:#f80 ;
+}
+input:invalid{
+    background-color:#ffe;
+    border-color:red;
+    border-width: 3px;
+    }
+input:valid,textarea:valid{
+    background-color:cornsilk;
+    border-color:#5a5;
+}
+input[type='radio'],input[type='checkbox']{
+    width: auto;
+}
+
+input[type='radio'],label[for="M"],label[for="F"]{
+    display: inline;
+}

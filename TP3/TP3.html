@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TP3.css">
+    <title>formulaire</title>
+</head>
+
+<body>
+    <form>
+        <h2>Formulaire d'inscription</h2>
+        <div>
+            <label for="nom">
+                Nom:
+                <span>*</span>
+            </label>
+            <input type="text" id="nom" autocomplete autofocus required>
+        </div>
+        <div>
+            <label for="prenom" >
+                Prenom:
+                <span>*</span>
+            </label>
+            <input type="text" id="prenom" autocomplete required>
+        </div>
+        <div>
+            <label for="date">
+                Date de naissance:
+                <span>*</span>
+            </label>
+            <input type="date" id="date" autocomplete required>
+        </div>
+        <div>
+            <label for="lieu">
+                Lieu de naissance:
+                <span>*</span>
+            </label>
+            <input type="text" id="lieu" autocomplete required>
+        </div>
+        <div>
+            <label>
+                Sexe
+                <span>*</span>
+            </label>
+            <input type="radio" id="M" required>
+            <label for="M">M</label>
+
+            <input type="radio" id="F">
+            <label for="F">F</label>
+        </div>
+        <div>
+            <label for="pays">Pays</label>
+            <select id="pays" autocomplete>
+                <option value=""></option>
+                <option value="benin">BENIN</option>
+                <option value="senegal">SENEGAL</option>
+                <option value="togo">TOGO</option>
+                <option value="amerique">AMERIQUE</option>
+                <option value="chine">CHINE</option>
+            </select>
+        </div>
+        <div>
+            <label for="adresse">Adresse:</label>
+            <textarea placeholder="Saisissez votre adresse: N° parcelle,quartier et ville " id="adresse" cols="30"
+                rows="10"></textarea>
+        </div>
+        <div>
+            <label for="portable">Tél. portable:</label>
+            <input type="tel" id="portable" autocomplete>
+        </div>
+        <div>
+            <label for="email">
+                Email
+                <span>*</span>
+            </label>
+            <input type="email" id="email" autocomplete required>
+        </div>
+        <div>
+            <label for="confirmation_email">
+                Confirmation Email:
+                <span>*</span>
+            </label>
+            <input placeholder="Retapez votre email" type="email" id="confirmation_email" required>
+        </div>
+        <label for="filiere">Filiéres demandées:</label>
+        <input type="checkbox" id="ti">
+        <label for="ti">Télécoms et Informatique</label>
+        <div>
+            <input type="checkbox" id="me">
+            <label for="me">Management et Economie du Numérique</label>
+        </div>
+        <div>
+            <input type="checkbox" id="me">
+            <label for="me">Management et Economie du Numérique</label>
+        </div>
+        </div>
+        <div>
+            <label for="password">
+                Donnez un mot de passe:
+                <span>*</span>
+            </label>
+            <input type="password" id="password" autocomplete required>
+        </div>
+        <div>
+            <label for="confirmation_password">
+                Confirmez le mot de passe:
+                <span>*</span>
+            </label>
+            <input type="password" id="confirmation_password" autocomplete required>
+        </div>
+        <p>
+            <span>*</span>
+            Champ obligatoire
+        </p>
+        <div>
+            <input type="reset" value="Retablir">
+            <input type="submit" value="Envoyer">
+        </div>
+    </form>
+
+</body>
+
+</html>
